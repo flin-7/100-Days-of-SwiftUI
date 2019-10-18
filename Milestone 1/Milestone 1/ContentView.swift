@@ -8,34 +8,6 @@
 
 import SwiftUI
 
-struct GameImage: View {
-    var name: String
-    
-    var body: some View {
-        Image(name)
-            .renderingMode(.original)
-        .clipShape(Capsule())
-        .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-        .shadow(color: .black, radius: 2)
-    }
-}
-
-struct Title: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .font(.largeTitle)
-            .foregroundColor(.blue)
-            .padding()
-            .background(Color.yellow)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-    }
-}
-
-extension View {
-    func titleStyle() -> some View {
-        self.modifier(Title())
-    }
-}
 
 struct ContentView: View {
     @State private var moves = ["rock", "paper", "scissors"]
@@ -44,61 +16,89 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
+    @State private var round = 1
     
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [.gray, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+        NavigationView {
             
-            VStack(spacing: 30) {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [.gray, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
                 
-                VStack(spacing: 10) {
-                    
-                    Text("I choose \(moves[randomMove])")
-                        .titleStyle()
-                    
-                    Text("You should \(shouldWin ? "win" : "lose")!")
-                    .foregroundColor(.white)
-                    
-                }
                 
-                ForEach(0..<3) { number in
-                    Button(action: {
-                        self.buttonTapped(number)
-                    }) {
-                        GameImage(name: self.moves[number])
+                VStack(spacing: 30) {
+                    
+                    VStack(spacing: 10) {
+                        
+                        Text("I choose \(moves[randomMove])")
+                            .titleStyle()
+                        
+                        Text("You should \(shouldWin ? "win" : "lose")!")
+                            .foregroundColor(.white)
+                        
                     }
+                    
+                    ForEach(0..<3) { number in
+                        Button(action: {
+                            self.buttonTapped(number)
+                        }) {
+                            GameImage(name: self.moves[number])
+                        }
+                    }
+                    
+                    Text("Score: \(score)")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .fontWeight(.light)
+                    
+                    Spacer()
+                    
+                }
+                .alert(isPresented: $showingScore) {
+                    Alert(title: Text(scoreTitle), message: Text("\(score)"), dismissButton: .default(Text("Retry?")) {
+                        self.newGame()
+                        })
                 }
                 
-                Text("Game")
-                .foregroundColor(.white)
-                .font(.title)
-                    .fontWeight(.light)
-                
-                Text("Score: \(score)")
-                .foregroundColor(.white)
-                .font(.title)
-                    .fontWeight(.light)
-                
-                Spacer()
-                
-            }
-            .alert(isPresented: $showingScore) {
-                Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
-                    self.newRound()
-                })
-            }
+            }.navigationBarTitle(Text("Round: \(round)/10"), displayMode: .inline)
         }
     }
     
     func buttonTapped(_ number: Int) {
+        let result = randomMove - number
         
+        switch shouldWin {
+        case false:
+            if result == 1 || result == -2 {
+                score += 1
+            } else {
+                score -= 1
+            }
+        case true:
+            if result == -1 || result == 2 {
+                score += 1
+            } else {
+                score -= 1
+            }
+        }
         
-        showingScore = true
+        newRound()
+        round += 1
+        
+        if (round == 11) {
+            scoreTitle = "Your Final Score:"
+            showingScore = true
+        }
     }
     
     func newRound() {
         randomMove = Int.random(in: 0...2)
         shouldWin = Bool.random()
+    }
+    
+    func newGame() {
+        newRound()
+        round = 1
+        score = 0
     }
 }
 

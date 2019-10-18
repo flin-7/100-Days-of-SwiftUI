@@ -13,6 +13,7 @@
 		A0E76D4F2359949E00764C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E76D4E2359949E00764C7E /* Assets.xcassets */; };
 		A0E76D522359949E00764C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E76D512359949E00764C7E /* Preview Assets.xcassets */; };
 		A0E76D552359949E00764C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E76D532359949E00764C7E /* LaunchScreen.storyboard */; };
+		C2C59547235A3601001C40D7 /* Custom View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C59546235A3601001C40D7 /* Custom View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A0E76D512359949E00764C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0E76D542359949E00764C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0E76D562359949E00764C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C59546235A3601001C40D7 /* Custom View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A0E76D482359949D00764C7E /* AppDelegate.swift */,
 				A0E76D4A2359949D00764C7E /* SceneDelegate.swift */,
 				A0E76D4C2359949D00764C7E /* ContentView.swift */,
+				C2C59546235A3601001C40D7 /* Custom View.swift */,
 				A0E76D4E2359949E00764C7E /* Assets.xcassets */,
 				A0E76D532359949E00764C7E /* LaunchScreen.storyboard */,
 				A0E76D562359949E00764C7E /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				A0E76D492359949D00764C7E /* AppDelegate.swift in Sources */,
 				A0E76D4B2359949D00764C7E /* SceneDelegate.swift in Sources */,
+				C2C59547235A3601001C40D7 /* Custom View.swift in Sources */,
 				A0E76D4D2359949D00764C7E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
