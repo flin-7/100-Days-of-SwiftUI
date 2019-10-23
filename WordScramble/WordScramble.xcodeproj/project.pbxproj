@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06E92242360204600FDDF32 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A06E92232360204600FDDF32 /* start.txt */; };
 		A0CA3DC1235ECC8300781CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA3DC0235ECC8300781CEB /* AppDelegate.swift */; };
 		A0CA3DC3235ECC8300781CEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA3DC2235ECC8300781CEB /* SceneDelegate.swift */; };
 		A0CA3DC5235ECC8300781CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA3DC4235ECC8300781CEB /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A06E92232360204600FDDF32 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		A0CA3DBD235ECC8300781CEB /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CA3DC0235ECC8300781CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CA3DC2235ECC8300781CEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				A0CA3DC6235ECC8400781CEB /* Assets.xcassets */,
 				A0CA3DCB235ECC8400781CEB /* LaunchScreen.storyboard */,
 				A0CA3DCE235ECC8400781CEB /* Info.plist */,
+				A06E92232360204600FDDF32 /* start.txt */,
 				A0CA3DC8235ECC8400781CEB /* Preview Content */,
 			);
 			path = WordScramble;
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CA3DCD235ECC8400781CEB /* LaunchScreen.storyboard in Resources */,
+				A06E92242360204600FDDF32 /* start.txt in Resources */,
 				A0CA3DCA235ECC8400781CEB /* Preview Assets.xcassets in Resources */,
 				A0CA3DC7235ECC8400781CEB /* Assets.xcassets in Resources */,
 			);
