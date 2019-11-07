@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A037148D2374DFC1006F9AD2 /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037148C2374DFC1006F9AD2 /* Missions.swift */; };
 		A077677223712B5F00D0927A /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = A077677023712B5F00D0927A /* missions.json */; };
 		A077677323712B5F00D0927A /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = A077677123712B5F00D0927A /* astronauts.json */; };
 		A077677523712BA100D0927A /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A077677423712BA100D0927A /* Astronaut.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A037148C2374DFC1006F9AD2 /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
 		A077677023712B5F00D0927A /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		A077677123712B5F00D0927A /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		A077677423712BA100D0927A /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				A0C551F62372A6C9008F03B5 /* MissionView.swift */,
 				A077677423712BA100D0927A /* Astronaut.swift */,
 				A077677823712FA000D0927A /* Mission.swift */,
+				A037148C2374DFC1006F9AD2 /* Missions.swift */,
 				A077677623712C0500D0927A /* Bundle-Decodable.swift */,
 				A0EEBEA723700433004845C7 /* Assets.xcassets */,
 				A0EEBEAC23700433004845C7 /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				A0EEBEA223700431004845C7 /* AppDelegate.swift in Sources */,
 				A0EEBEA423700431004845C7 /* SceneDelegate.swift in Sources */,
 				A077677723712C0500D0927A /* Bundle-Decodable.swift in Sources */,
+				A037148D2374DFC1006F9AD2 /* Missions.swift in Sources */,
 				A0EEBEA623700431004845C7 /* ContentView.swift in Sources */,
 				A077677523712BA100D0927A /* Astronaut.swift in Sources */,
 			);

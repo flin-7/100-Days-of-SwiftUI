@@ -27,7 +27,14 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.7)
                         .padding(.top)
                     
+                    Text(self.mission.formattedLaunchDate)
+                        .font(.title)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
+                        .padding(.top)
+                    
                     Text(self.mission.description)
+                        .font(.body)
                         .padding()
                     
                     ForEach(self.astronauts, id: \.role) { crewMember in
