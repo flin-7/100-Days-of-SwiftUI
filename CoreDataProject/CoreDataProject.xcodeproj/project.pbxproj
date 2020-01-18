@@ -14,8 +14,11 @@
 		E50A39E723BFE81F005A07DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50A39E623BFE81F005A07DD /* Assets.xcassets */; };
 		E50A39EA23BFE81F005A07DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50A39E923BFE81F005A07DD /* Preview Assets.xcassets */; };
 		E50A39ED23BFE81F005A07DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50A39EB23BFE81F005A07DD /* LaunchScreen.storyboard */; };
-		E50A39F623BFEA69005A07DD /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A39F423BFEA69005A07DD /* Movie+CoreDataClass.swift */; };
-		E50A39F723BFEA69005A07DD /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A39F523BFEA69005A07DD /* Movie+CoreDataProperties.swift */; };
+		E545C2FE23D3AEDC006388E5 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545C2FA23D3AEDC006388E5 /* Candy+CoreDataClass.swift */; };
+		E545C2FF23D3AEDC006388E5 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545C2FB23D3AEDC006388E5 /* Candy+CoreDataProperties.swift */; };
+		E545C30023D3AEDC006388E5 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545C2FC23D3AEDC006388E5 /* Country+CoreDataClass.swift */; };
+		E545C30123D3AEDC006388E5 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545C2FD23D3AEDC006388E5 /* Country+CoreDataProperties.swift */; };
+		E586EC3723D30C7900B7B015 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586EC3623D30C7900B7B015 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +31,11 @@
 		E50A39E923BFE81F005A07DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E50A39EC23BFE81F005A07DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E50A39EE23BFE81F005A07DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E50A39F423BFEA69005A07DD /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E50A39F523BFEA69005A07DD /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E545C2FA23D3AEDC006388E5 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E545C2FB23D3AEDC006388E5 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E545C2FC23D3AEDC006388E5 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E545C2FD23D3AEDC006388E5 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E586EC3623D30C7900B7B015 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +68,14 @@
 		E50A39DC23BFE81E005A07DD /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				E50A39F423BFEA69005A07DD /* Movie+CoreDataClass.swift */,
-				E50A39F523BFEA69005A07DD /* Movie+CoreDataProperties.swift */,
+				E545C2FA23D3AEDC006388E5 /* Candy+CoreDataClass.swift */,
+				E545C2FB23D3AEDC006388E5 /* Candy+CoreDataProperties.swift */,
+				E545C2FC23D3AEDC006388E5 /* Country+CoreDataClass.swift */,
+				E545C2FD23D3AEDC006388E5 /* Country+CoreDataProperties.swift */,
 				E50A39DD23BFE81E005A07DD /* AppDelegate.swift */,
 				E50A39DF23BFE81E005A07DD /* SceneDelegate.swift */,
 				E50A39E423BFE81E005A07DD /* ContentView.swift */,
+				E586EC3623D30C7900B7B015 /* FilteredList.swift */,
 				E50A39E623BFE81F005A07DD /* Assets.xcassets */,
 				E50A39EB23BFE81F005A07DD /* LaunchScreen.storyboard */,
 				E50A39EE23BFE81F005A07DD /* Info.plist */,
@@ -158,9 +167,12 @@
 				E50A39DE23BFE81E005A07DD /* AppDelegate.swift in Sources */,
 				E50A39E023BFE81E005A07DD /* SceneDelegate.swift in Sources */,
 				E50A39E523BFE81E005A07DD /* ContentView.swift in Sources */,
-				E50A39F623BFEA69005A07DD /* Movie+CoreDataClass.swift in Sources */,
-				E50A39F723BFEA69005A07DD /* Movie+CoreDataProperties.swift in Sources */,
 				E50A39E323BFE81E005A07DD /* CoreDataProject.xcdatamodeld in Sources */,
+				E545C2FF23D3AEDC006388E5 /* Candy+CoreDataProperties.swift in Sources */,
+				E586EC3723D30C7900B7B015 /* FilteredList.swift in Sources */,
+				E545C30023D3AEDC006388E5 /* Country+CoreDataClass.swift in Sources */,
+				E545C2FE23D3AEDC006388E5 /* Candy+CoreDataClass.swift in Sources */,
+				E545C30123D3AEDC006388E5 /* Country+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
