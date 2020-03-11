@@ -30,9 +30,14 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle(rootWord)
-            .onAppear(perform: startGame)
-            .alert(isPresented: $showingError) {
-                Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            .navigationBarItems(leading:
+                Button(action: startGame) {
+                    Text("New Game")
+                }
+            )
+                .onAppear(perform: startGame)
+                .alert(isPresented: $showingError) {
+                    Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
         }
     }
@@ -41,6 +46,11 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer.count > 0 else { return }
+        
+        if answer == rootWord {
+            wordError(title: "Word used already", message: "Be more original")
+            return
+        }
         
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -66,6 +76,7 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
+                usedWords.removeAll()
                 return
             }
         }
@@ -92,6 +103,9 @@ struct ContentView: View {
     }
     
     func isReal(word: String) -> Bool {
+        if word.count < 3 {
+            return false
+        }
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
