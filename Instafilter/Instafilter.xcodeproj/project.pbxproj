@@ -42,7 +42,6 @@
 		E5789E5D24AD0EF80057D034 = {
 			isa = PBXGroup;
 			children = (
-				E5963C7024AE6DDA00623A13 /* ImagePicker.swift */,
 				E5789E6824AD0EF80057D034 /* Instafilter */,
 				E5789E6724AD0EF80057D034 /* Products */,
 			);
@@ -62,6 +61,7 @@
 				E5789E6924AD0EF80057D034 /* AppDelegate.swift */,
 				E5789E6B24AD0EF90057D034 /* SceneDelegate.swift */,
 				E5789E6D24AD0EF90057D034 /* ContentView.swift */,
+				E5963C7024AE6DDA00623A13 /* ImagePicker.swift */,
 				E5789E6F24AD0EFA0057D034 /* Assets.xcassets */,
 				E5789E7424AD0EFA0057D034 /* LaunchScreen.storyboard */,
 				E5789E7724AD0EFA0057D034 /* Info.plist */,
