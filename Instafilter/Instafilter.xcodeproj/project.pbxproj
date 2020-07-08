@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C2D1218924B3BD8200882F95 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1218824B3BD8200882F95 /* ImagePicker.swift */; };
+		E5148CE124B59D880077EBD4 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5148CE024B59D880077EBD4 /* ImageSaver.swift */; };
 		E5789E6A24AD0EF80057D034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5789E6924AD0EF80057D034 /* AppDelegate.swift */; };
 		E5789E6C24AD0EF90057D034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5789E6B24AD0EF90057D034 /* SceneDelegate.swift */; };
 		E5789E6E24AD0EF90057D034 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5789E6D24AD0EF90057D034 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		C2D1218824B3BD8200882F95 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E5148CE024B59D880077EBD4 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		E5789E6624AD0EF80057D034 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789E6924AD0EF80057D034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5789E6B24AD0EF90057D034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				E5789E6B24AD0EF90057D034 /* SceneDelegate.swift */,
 				E5789E6D24AD0EF90057D034 /* ContentView.swift */,
 				C2D1218824B3BD8200882F95 /* ImagePicker.swift */,
+				E5148CE024B59D880077EBD4 /* ImageSaver.swift */,
 				E5789E6F24AD0EFA0057D034 /* Assets.xcassets */,
 				E5789E7424AD0EFA0057D034 /* LaunchScreen.storyboard */,
 				E5789E7724AD0EFA0057D034 /* Info.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				E5789E6A24AD0EF80057D034 /* AppDelegate.swift in Sources */,
 				C2D1218924B3BD8200882F95 /* ImagePicker.swift in Sources */,
+				E5148CE124B59D880077EBD4 /* ImageSaver.swift in Sources */,
 				E5789E6C24AD0EF90057D034 /* SceneDelegate.swift in Sources */,
 				E5789E6E24AD0EF90057D034 /* ContentView.swift in Sources */,
 			);
